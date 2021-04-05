@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_homem"
+    tools:context=".Homem">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:contentDescription="@string/logo"
+            android:id="@+id/imageLogo"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            app:srcCompat="@drawable/logo" />
+
+
+        <TextView
+            android:id="@+id/textTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="#5B1C1E1C"
+            android:padding="10dp"
+            android:text="@string/heal_fit"
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/textEmagrecimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#008545"
+            android:padding="3dp"
+            android:textColor="@color/white"
+
+            android:text="@string/Selecione"
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+
+
+        <Button
+            android:id="@+id/bttEmagrecimento"
+            android:onClick="startemagrecimentoActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/emagrecimento"
+            android:textSize="18sp"
+            app:backgroundTint="#38883C"
+            tools:ignore="OnClick" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+        <Button
+            android:id="@+id/bttHipertrofia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/hipertrofia"
+            android:textSize="18sp"
+            app:backgroundTint="#38883C" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

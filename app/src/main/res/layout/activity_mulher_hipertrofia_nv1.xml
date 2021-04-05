@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_mulher_hipertrofia"
+    tools:context=".mulher_hipertrofia_nv1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/textEmagrecimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D5008545"
+            android:gravity="center"
+            android:padding="9dp"
+            android:text="@string/hipertrofia"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <Button
+            android:id="@+id/bttIniciante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/iniciante"
+            android:textSize="18sp"
+            app:backgroundTint="#AE006A33" />
+
+        <ImageView
+            android:contentDescription="hipA"
+            android:layout_margin="10dp"
+            android:id="@+id/imageView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/treino_mulher_hipertrofia_inciante_a" />
+
+        <ImageView
+            android:contentDescription="hipB"
+            android:layout_margin="10dp"
+            android:id="@+id/imageView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/treino_mulher_hipertrofia_inciante_b" />
+
+        <ImageView
+            android:contentDescription="hipC"
+            android:layout_margin="10dp"
+            android:id="@+id/imageView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/treino_mulher_hipertrofia_inciante_c" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

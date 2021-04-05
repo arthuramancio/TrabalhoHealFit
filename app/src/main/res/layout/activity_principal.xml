@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_teste"
+    tools:context=".Principal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:contentDescription="@string/logo"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5B1C1E1C"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/Heal_fit"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+
+        <TextView
+            android:id="@+id/textSelecionar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#008545"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/Selecione"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/bttMulher"
+            android:layout_width="155dp"
+            android:layout_height="94dp"
+            android:layout_gravity="center"
+            android:text="@string/mulher"
+            app:backgroundTint="#AE006A33" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/bttHomem"
+            android:layout_width="158dp"
+            android:layout_height="94dp"
+            android:text="@string/homem"
+            android:layout_gravity="center"
+            app:backgroundTint="#AE006A33" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/buttCronometro"
+            android:layout_width="155dp"
+            android:layout_height="94dp"
+            android:layout_gravity="center"
+            android:text="Cronometro"
+            app:backgroundTint="#AE006A33"/>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
